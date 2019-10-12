@@ -16,13 +16,17 @@
 </head>
 <body>
     <div class="main">
-      <div class="logo"></div>
+      <div class="logo" onmouseover="plaaaay('miao')"></div>
 	  <P>致力于，<br/>让每个人都能够享受网络的便捷，<br/>并从中获得乐趣！</P>
 	  <P><a href="//sozhida.com" target="_blank">券站✈好物优选⎋</a></P>
 	  <P><a href="//sudakm.com"target="_blank">卡站✈自助提卡⎋</a></P>
       <P><a href="https://acglt.com"target="_blank">关于</a></P>
     </div>
-	
+  <div style="display: none;">
+    <!-- 喵~  -->
+    <audio id="miao" src="//zhida.shider.cn/mp3/15.mp3" preload="auto">Your browser does not support the audio element.</audio>
+  </div>
+<div id="music"> </div>
 <script>
 (function(){
     var bp = document.createElement('script');
@@ -38,4 +42,11 @@
 })();
 </script>
 </body>
+  <script src="https://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+  <script src="//zhida.shider.cn/index.js"></script>
+  <script>
+  var plaaaay = function(id) {
+    $('#' + id)[0].play();
+  }  
+  </script>
 </html>
